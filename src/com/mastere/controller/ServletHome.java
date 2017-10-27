@@ -16,7 +16,7 @@ public class ServletHome extends UtilHttpServlet {
 		model.add("Bob");
 		model.add("Richard");
 		//this.displayView("index", null);
-		this.displayView(model);
+		this.displayView(TestDAO.list());
 	}
 	
 	public void toto(){
@@ -26,7 +26,7 @@ public class ServletHome extends UtilHttpServlet {
 	public void prenom(){
 		if(this.req.getMethod().equals("POST")){
 			Test t = new Test();
-			t.setFirstname(this.getParam("inputPrenom"));
+			t.setName(this.getParam("inputPrenom"));
 			TestDAO.Save(t);
 			
 		}

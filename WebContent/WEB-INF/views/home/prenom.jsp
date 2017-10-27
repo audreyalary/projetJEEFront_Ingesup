@@ -1,6 +1,6 @@
 	<div>
 		<c:forEach items="${model}" var="m">
-			<p>${m.firstname}</p>
+			<p>${m}</p>
 		</c:forEach>
 	
 	</div>

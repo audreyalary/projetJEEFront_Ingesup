@@ -9,9 +9,9 @@
 			<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 			
 			<!-- chaine de connexion -->
-			<property name="connection.url">jdbc:mysql://localhost/mastere?autoReconnect=true</property>
-			<property name="connection.username">root</property>
-			<property name="connection.password"></property>
+			<property name="connection.url">jdbc:mysql://javaingesup.cjdrvuwfri4t.eu-central-1.rds.amazonaws.com:3306/javaingesup</property>
+			<property name="connection.username">javaingesup</property>
+			<property name="connection.password">javaingesup</property>
 			
 			<!--  pool -->
 			<property name="connection.pool_size">10</property>
@@ -28,8 +28,8 @@
 			<!-- génération auto de la bdd -->
 			<!-- <property name="hibernate.hbm2dll.auto">create/update</property> -->
 			
-			<mapping class="com.mastere.metier.Test"/>
-			<mapping class="com.mastere.metier.User"/>
+			<!-- <mapping class="com.mastere.metier.Test"/>
+			<mapping class="com.mastere.metier.User"/>-->
 			
 		</session-factory>
 	</hibernate-configuration>

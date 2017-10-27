@@ -8,28 +8,55 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="test")
+@Table(name="user")
 public class Test {
 
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name="firstname")
-	private String firstname;
+	@Column(name="name")
+	private String name;
 	
+	@Column(name="cpucharge")
+	private int cpucharge;
+	
+	@Column(name="lastip")
+	private String lastip;
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getFirstname() {
-		return firstname;
+
+	public String getName() {
+		return name;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	public int getCpucharge() {
+		return cpucharge;
+	}
+
+	public void setCpucharge(int cpucharge) {
+		this.cpucharge = cpucharge;
+	}
+
+	public String getLastip() {
+		return lastip;
+	}
+
+	public void setLastip(String lastip) {
+		this.lastip = lastip;
+	}
+	
+
 	
 	
 }

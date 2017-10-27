@@ -12,7 +12,7 @@ public class TestDAO {
 	}
 	
 	public static List<Test> list(){
-		return HibernateUtil.getSession().createQuery("from Test").getResultList();
+		return HibernateUtil.getSession().createSQLQuery("select name from user").getResultList();
 	}
 	
 }
